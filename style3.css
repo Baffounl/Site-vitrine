@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Montserrat&family=Playfair+Display:ital,wght@0,600;1,500;1,600&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+nav{
+    display: flex;
+    /* Aligner tous les éléments */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* metrre un ligne en gris */
+    border-bottom: 5px solid rgb(17, 16, 16);
+}
+nav h1{
+    color:#717171;
+    font-family: 'Playfair Display', 'Courier New';
+    font-size: 30px;
+}
+nav .onglets{
+    margin-top: 3px;
+    margin-left: 300px;
+}
+
+nav .onglets a{
+    text-decoration: none;
+    color: #000;
+    margin-right: 10px;
+    border-bottom: 1px solid #000;
+    /* interligne entre le ligne et mot */
+    padding-bottom: 5px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('images/1.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 40px;
+}
+header h1{
+    font-family: 'Playfair Display', 'Courier New';
+    font-size: 50px;
+}
+header h4{
+    margin-top: -20px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+ header button{
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    font-size: 20px;
+    font-family: 'Playfair Display', 'Courier New';
+ }
+
+.main{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .content .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+.main .content .card .right img {
+    height: 300px;
+    width: 400px;
+    margin-top: 5px;
+}
+.main .content .card .left{
+    flex: 0 0 30%;
+    padding: 20px;
+    background: #000;
+    color: #fff;
+}
+
+.main .content .card.right{
+    flex: 0 0 70%;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 877px) {
+    nav .onglets{
+        margin-left: 10 px;
+        margin-bottom: 20px;
+        
+    }
+    
+}
+
+@media screen and (max-width: 414px) {
+    nav .onglets{
+        margin-left: 10px;
+        margin-bottom: 0px;
+
+
+    }
+    
+}
+@media screen and (max-width: 414px) {
+    nav .onglets a{
+        padding-bottom: 0px;
+    }
+    
+}
+@media screen and (max-width: 360px) {
+    nav .onglets a{
+        padding-bottom: 0px;
+    }
+    
+}
